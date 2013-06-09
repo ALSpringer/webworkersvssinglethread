@@ -1,0 +1,103 @@
+(use 'clj-webdriver.taxi)
+(set-driver! {:browser :firefox} "http://github.com")
+(set-driver! {:browser :safari} "http://github.com")
+(def driver (start {:browser :safari} "http://github.com))
+driver
+(driver )
+(class? driver)
+(+ 1 1)
+driver
+(use 'clj-webdriver.taxi)
+(set-drive! {:browser :firefox} "https://github.com")
+(set-driver! {:browser :firefox} "https://github.com")
+(core/find-elements *driver* {:css #login_field})
+(core/find-elements {:css #login_field})
+(core/find-elements {:css "#login_field"})
+(find-elements {:css "#login_field"})
+(find-elements {:css "#footer-push"})
+(find-elements {:css ".heading"})
+(text (find-elements {:css ".heading"}))
+(find-elements {:css ".heading"})
+(location (find-elements {:css ".heading"}))
+(let [x] (find-elements {:css ".heading"}))
+(let [x (find-elements {:css ".heading"})])
+x
+(x)
+(let [x (find-elements {:css ".heading"})]x)
+(let [x (find-elements {:css ".heading"})] (text x))
+(let [x (find-elements {:css ".heading"})] (text (apply str x)))
+(use 'clj-webdriver.taxi)
+(set-driver! {:browser :firefox} "http://harrisonburg.craigslist.com/")
+(get-url "/bia/")
+(get-url "http://harrisonburg.craigslist.com/bia/")
+(elements ".row")
+(elements ".row a")
+(dorun (map text (elements ".row a")))
+(map text (elements ".row a"))
+(first (map text (elements ".row a")))
+(second (map text (elements ".row a")))
+(third (map text (elements ".row a")))
+(last (map text (elements ".row a")))
+main
+-main
+(-main )
+(-main )exit
+(readlist test.txt)
+(readlist "test.txt")
+(-main)
+(readlist "test.txt")
+readlist
+(meta readlist)
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (first (split j ",")))))
+(readlist "test.txt")
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (first (split j #",")))))
+(readlist "test.txt")
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (map (first (split j #","))))))
+(readlist "test.txt")
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (map first (split j #",")))))))
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (map first (split j #",")))))
+(readlist "test.txt")
+(defn readlist [file] (doseq [j (split-lines (slurp file))] (prn (first (split j #",")))))
+(readlist "test.txt")
+exi
+(seq 1 2 3 4)
+(seq '(1 2 3 4))
+(set-drive! {:browser :firefox} "http://boston.craigslist.com/bia/")
+(set-driver! {:browser :firefox} "http://boston.craigslist.com/bia/")
+(let [listings (find-elements {:css ".row"})]
+(prn (for [i (take 10 listings)]
+(attribute i "data-pid")))
+)
+(zipmap '(1 2 3 4) '(a b c d))
+(let [listings (find-elements {:css ".row"})]
+(zipmap [i (take 10 listings)]
+(attribute i "data-pid"))
+'(1 2 3 4 5 6 7 8 9 10))
+(zipmap for([i (take 10 listings)]
+(attribute i "data-pid")))
+(zipmap for([i (take 10 listings)]
+(attribute i "data-pid"))
+'(1 2 3 4 5 6 7 8 9 10)
+)
+(zipmap (seq for([i (take 10 listings)]
+(attribute i "data-pid")))
+'(1 2 3 4 5 6 7 8 9 10))
+(let [listings (find-elements {:css ".row"})]
+(zipmap (seq for([i (take 10 listings)]
+(attribute i "data-pid")))
+'(1 2 3 4 5 6 7 8 9 10))
+)
+(let [listings (find-elements {:css ".row"})]
+(for [i (take 10 listings)]
+(attribute i "data-pid"))
+)
+(seq '(1 2 3 4))
+(-main)
+(-main boston bia)
+(-main "boston" "bia")
+(slurp "test.txt")
+(file test.txt)
+(file "test.txt")
+(.file)
+(.file "test.txt")
+(slurp "test.txt")
