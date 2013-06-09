@@ -1,3 +1,0 @@
-craigsjure
-
-Clojure Craigslist Notifier
