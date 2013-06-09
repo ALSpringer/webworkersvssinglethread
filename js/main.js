@@ -1,4 +1,4 @@
-var NUM_WORKERS = 100;
+var NUM_WORKERS = 1000;
 $(document).on('pageinit', '#startpage', function () {
   var startTime = 0,
       workers = [],
